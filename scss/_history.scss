@@ -1,0 +1,89 @@
+.history{
+    background-image: url('../images/peak.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    .title{
+        padding-top: 3em;
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        .number{
+            font-size: 15em;
+            font-family: 'oswald',sans-serif;
+            color: #697179
+        }
+        .text{
+            font-size: 2em;
+            font-weight: 600;
+            font-family: 'oswald',sans-serif;
+            position: absolute;
+            left: 7em;
+            top: 6.5em;
+            color: $blue
+        }
+        .lorem{
+            padding-left: 4em;
+        }
+    }
+    .carousel-wrapper{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: $blue;
+        padding: 3em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .carousel-img{
+            padding: 0 0.5em;
+        }
+        .carousel-indicators li{
+            border-radius: 10px !important;
+            top: 25px;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+
+@media (max-width:950px){
+    .history .title{
+        flex-direction: column
+    }
+    .history{
+        height: 150vh
+    }
+}
+
+@media (max-width:550px){
+    .history .title .text{
+            font-size: 2em;
+            font-weight: 600;
+            font-family: 'oswald',sans-serif;
+            position: absolute;
+            left: 0em;
+            top: 6.5em;
+            color: $blue
+        }
+        .history .title{
+            width: 90%
+        }
+        .history .title .lorem{
+            padding: 0;
+        }
+        .history{
+            height: 160vh
+        }
+        .carousel{
+            position: relative;
+            left: 5em;
+        }
+        .carousel .carousel-indicators{
+            right: 8em
+        }
+
+}

@@ -1,0 +1,21 @@
+.nav-white{
+    background-color: white;
+    height: 3.5em;
+    .nav{
+        a{
+            color: $blue
+        }
+        a:after{
+            background-color: black
+        }
+    }
+}
+
+
+.active1{
+    background-color: gray;
+    color: $blue
+}
+.active2{
+    color: white
+}

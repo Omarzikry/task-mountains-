@@ -1,0 +1,88 @@
+.title{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .number{
+        font-size: 15em;
+        font-family: 'oswald',sans-serif;
+        color: #697179
+    }
+    .text{
+        font-size: 2em;
+        font-weight: 600;
+        font-family: 'oswald',sans-serif;
+        position: absolute;
+        left: 7em;
+        top: 5em;
+        color: $blue
+    }
+    .lorem{
+        padding-left: 4em;
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+}
+
+.mountain{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    width: 100%;
+    background-color: $blue;
+    .link-wrapper{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    }
+    a{
+        padding: 0 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer
+    }
+    .mountain2{
+        cursor: pointer
+    }
+}
+
+@media (max-width:950px){
+    .title{
+        flex-direction: column
+    }
+}
+@media (max-width:650px){
+    .title{
+        width: 90%
+    }
+}
+@media (max-width:350px){
+    .title .text{
+        left: 0;
+    }
+    .title .lorem{
+        padding: 0
+    }
+    .title .number{
+        font-size: 13em;
+    }
+    .mountain .link-wrapper{
+        width: 95%
+    }
+}
+
+@media (max-width:300px){
+    .mountain .link-wrapper{
+        flex-direction: column;
+        width: 100%;
+        a{
+            width: 100%;
+            padding-left: 2.5em
+        }
+    }
+
+}
